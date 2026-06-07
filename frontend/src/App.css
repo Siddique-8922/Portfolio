@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@700;900&display=swap');
+
+/* Global Root Theme Variables */
+:root {
+  --bg-main: #0a0c10;
+  --text-white: #ffffff;
+  --text-primary: #f3f4f6;
+  --text-muted: #9ca3af;
+  --color-cyan: #22d3ee;
+  --color-purple: #c084fc;
+}
+
+/* Base Body Resets */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Custom Branding Font Class */
+.orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Professional Clip Path Text Gradient Utility */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-cyan) 0%, #3b82f6 50%, var(--color-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Global Glassmorphism Card Frame Styling */
+.glass {
+  background: rgba(17, 24, 39, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom Scrollbar Styling for a Polished Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Standardized Section Constraints */
+section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
